@@ -1,4 +1,3 @@
-
 // Take a look at the code here. Notice the VSCode will 
 // provide errors!
 
@@ -6,9 +5,9 @@
 // tsc example-2.ts
 
 function getPriceWithTax(amount: number, rate: number): string {
-	const price: number = amount.toFixed(2)
+	const price: number = amount // value -> string then string -> integer
 	const tax: number = price * rate
-	return price + tax
+	return price + tax.toFixed(2)
 }
 
 const answer = getPriceWithTax(23.99, 9.5)

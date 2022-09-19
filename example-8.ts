@@ -3,11 +3,15 @@
 // Type can be: lizard, flying, or ape. 
 
 enum KaijuType { 
-	
+	flying,
+	lizard,
+	ape	
 }
 
 class Kaiju {
-	
+	name: string
+	type: KaijuType
+	power: number
 }
 
 export {
